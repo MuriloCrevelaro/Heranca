@@ -1,17 +1,23 @@
 ﻿using Heranca;
 
-//                              Animal
+// //                              Animal
 // Gato g1 = new Gato();
 // g1.FazerSom();
 // Cachorro c1 = new Cachorro();
 // c1.FazerSom();
 
 
-// //                           Funcionários 
-// Funcionarios f1 = new Funcionarios();
-// System.Console.WriteLine($"Salario do funcionario: {f1.SalarioBase}");
-// Gerente g1 = new Gerente();
-// System.Console.WriteLine($"Salario do gerente: {g1.SalarioBase}");
+
+//                           Funcionários 
+Funcionarios f1 = new Funcionarios();
+System.Console.WriteLine($"Salario do funcionario: {f1.SalarioBase}");
+Gerente g1 = new Gerente();
+g1.SalarioBase = 1000;
+g1.Bonus = 500;
+g1.CalcularSalario();
+System.Console.WriteLine($"Salario do gerente: {g1.SalarioBase}");
+
+
 
 
 // //                              Veículos 
@@ -27,6 +33,8 @@
 // c1.Modelo = "Uno";
 // c1.QtdPortas = 2;
 // c1.MostrarInfo();
+
+
 
 
 // //                              Escola 
@@ -51,12 +59,13 @@
 // Curso: {a1.Curso}");
 
 
-//                              Sistema bancário 
-ContaPoupanca c1 = new ContaPoupanca();
-c1.Saldo = 2000;
-c1.Depositar(1400);
-c1.Sacar(200);
-c1.CalcularRendimento(); 
-System.Console.WriteLine(@$"Saldo Inicaial: {c1.Saldo}
-Saldo Final: {c1.SaldoF}");
+
+// //                              Sistema bancário 
+// ContaPoupanca c1 = new ContaPoupanca();
+// c1.Saldo = 2000;
+// c1.Depositar(1400);
+// c1.Sacar(200);
+// c1.CalcularRendimento(); 
+// System.Console.WriteLine(@$"Saldo Inicaial: {c1.Saldo}
+// Saldo Final: {c1.SaldoF}");
 
